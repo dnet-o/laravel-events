@@ -26,7 +26,9 @@
   </header>
 
   @if (session("msg"))
-    <p class="msg">{{ session("msg") }}</p>
+    <div class="absolute right-0 bg-green-600 p-4">
+      <p class="msg text-white">{{ session("msg") }}</p>
+    </div>
   @endif
 
   @yield("content")
